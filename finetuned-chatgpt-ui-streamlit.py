@@ -3,7 +3,7 @@ import streamlit as st
 import os
 
 # title of page
-st.title('OpenAI ChatGPT')
+st.title('AI FND Patient Actor')
 
 # initialize session variables at the start once
 if 'model' not in st.session_state:
@@ -73,3 +73,4 @@ if prompt :=st.chat_input("Enter your query"):
 
 
     st.session_state['messages'].append({"role": "assistant", "content": response})
+
